@@ -13,5 +13,5 @@
 //
 // ---------- Run as RWSERVE plugin  ---------- 
 run {
-	sh node --inspect=165.227.11.3:9229 ../../../app/rwserve/dbg/main.js ../etc/lowercase-config   2> /dev/null
+	sh node --inspect=165.227.11.3:9229 ../../../app/rwserve/dbg/main.js ../etc/lowercase-config   //2> /dev/null
 }

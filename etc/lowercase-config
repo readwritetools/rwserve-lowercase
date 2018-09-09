@@ -18,6 +18,10 @@ server {
 		access-key      AK-UNREGISTERED
 	}
 
+	modules {
+		information-headers on
+	}
+	
 	request {
 		methods GET,HEAD
 
