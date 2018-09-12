@@ -1,9 +1,5 @@
 !blue 2.0
-
-//good $PLUGIN-PATH='/srv/rwserve-plugins/node_modules/rwserve-lowercase/dist/index.js'
-
-$PLUGIN-PATH='/palau/plugin/rwserve-lowercase/dbg/index.js'		// test
-
+$PLUGIN-PATH='/srv/rwserve-plugins/node_modules/rwserve-lowercase/dist/index.js'
 $PRIVATE-KEY='/etc/pki/tls/private/localhost.key'
 $CERTIFICATE='/etc/pki/tls/certs/localhost.crt'
 $DOCUMENTS-PATH='/srv/rwserve/configuration-docs'
