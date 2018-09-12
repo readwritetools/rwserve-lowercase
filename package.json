@@ -1,6 +1,6 @@
 {
   "name": "rwserve-lowercase",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "RWSERVE plugin to conditionally convert the incoming request path to lowercase letters",
   "author": "Read Write Tools",
   "license": "MIT",
