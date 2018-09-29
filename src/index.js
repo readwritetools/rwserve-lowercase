@@ -43,7 +43,7 @@ export default class RwserveLowercase {
 	}
 	
 	async startup() {
-		log.debug('RwserveLowercase', 'v1.0.0; © 2018 Read Write Tools; MIT License'); 
+		log.debug('RwserveLowercase', `version ${this.hostConfig.pluginsConfig.rwserveLowercase.pluginVersion}; © 2018 Read Write Tools; MIT License`); 
 	}
 	
 	async shutdown() {
