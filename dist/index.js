@@ -43,7 +43,7 @@ module.exports = class RwserveLowercase {
 	}
 	
 	async startup() {
-		log.debug('RwserveLowercase', 'v1.0.0; © 2018 Read Write Tools; MIT License'); 
+		log.debug('RwserveLowercase', `version ${this.hostConfig.pluginsConfig.rwserveLowercase.pluginVersion}; © 2018 Read Write Tools; MIT License`); 
 	}
 	
 	async shutdown() {
@@ -77,12 +77,12 @@ module.exports = class RwserveLowercase {
 					
 				var location = `https://${hostname}${port}${lcResourcePath}`;
 				workOrder.addStdHeader('location', location);
-				workOrder.setEmptyPayload();
+				workOrder.setEmptyResponseBody();
 				workOrder.setStatusCode(SC.FOUND_302);
 			}
 			else {
 				// neither the original nor the lowercase version exists, return NOT_FOUND_404
-				workOrder.setEmptyPayload();
+				workOrder.setEmptyResponseBody();
 				workOrder.setStatusCode(SC.NOT_FOUND_404);				
 			}			
 		}
